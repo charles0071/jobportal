@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>jobportal</display-name>
+	
+	<welcome-file-list>
+		<welcome-file>/hrms_user_login.jsp</welcome-file>
+	</welcome-file-list>
+
+
+<servlet>
+        <servlet-name>hrms_user_login</servlet-name>
+        <servlet-class>com.servlet.HrmsUserLogin</servlet-class>
+ </servlet>
+
+<servlet>
+        <servlet-name>hrms_employee</servlet-name>
+        <servlet-class>com.servlet.HrmsEmployee</servlet-class>
+ </servlet>
+
+ <servlet>
+        <servlet-name>hrms_applicant</servlet-name>
+        <servlet-class>com.servlet.HrmsApplicant</servlet-class>
+ </servlet>
+
+ <servlet>
+        <servlet-name>applicant_test_dtl</servlet-name>
+        <servlet-class>com.servlet.ApplicantTestDtl</servlet-class>
+ </servlet>
+
+ <servlet>
+        <servlet-name>time_management</servlet-name>
+        <servlet-class>com.servlet.TimeManagement</servlet-class>
+ </servlet>
+
+ <servlet>
+        <servlet-name>leave_management</servlet-name>
+        <servlet-class>com.servlet.LeaveManagement</servlet-class>
+ </servlet>
+
+<servlet>
+        <servlet-name>hrms_payroll</servlet-name>
+        <servlet-class>com.servlet.HrmsPayroll</servlet-class>
+ </servlet>
+
+
+
+ <servlet-mapping>
+        <servlet-name>hrms_employee</servlet-name>
+        <url-pattern>/hrms_employee</url-pattern>
+  </servlet-mapping>
+
+ <servlet-mapping>
+        <servlet-name>hrms_user_login</servlet-name>
+        <url-pattern>/hrms_user_login</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+        <servlet-name>hrms_applicant</servlet-name>
+        <url-pattern>/hrms_applicant</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+        <servlet-name>applicant_test_dtl</servlet-name>
+        <url-pattern>/applicant_test_dtl</url-pattern>
+  </servlet-mapping>
+
+ <servlet-mapping>
+        <servlet-name>time_management</servlet-name>
+        <url-pattern>/time_management</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+        <servlet-name>leave_management</servlet-name>
+        <url-pattern>/leave_management</url-pattern>
+  </servlet-mapping>
+
+   <servlet-mapping>
+        <servlet-name>hrms_payroll</servlet-name>
+        <url-pattern>/hrms_payroll</url-pattern>
+  </servlet-mapping>
+</web-app>
